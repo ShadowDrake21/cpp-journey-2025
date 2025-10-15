@@ -28,16 +28,35 @@ int main()
   // cout << (a == 5 && b == 5 + 3) << endl;
 
   // =, +=, -=, *=, /=, %=
-  int x = 5;
-  cout << "Initial x is " << x << endl;
-  x += 3;
-  cout << "x += 3 is " << x << endl;
-  x -= 3;
-  cout << "x -= 3 is " << x << endl;
-  x *= 3;
-  cout << "x *= 3 is " << x << endl;
-  x /= 3;
-  cout << "x /= 3 is " << x << endl;
-  x %= 3;
-  cout << "x %= 3 is " << x << endl;
+  // int x = 5;
+  // cout << "Initial x is " << x << endl;
+  // x += 3;
+  // cout << "x += 3 is " << x << endl;
+  // x -= 3;
+  // cout << "x -= 3 is " << x << endl;
+  // x *= 3;
+  // cout << "x *= 3 is " << x << endl;
+  // x /= 3;
+  // cout << "x /= 3 is " << x << endl;
+  // x %= 3;
+  // cout << "x %= 3 is " << x << endl;
+
+  int a = 5, b = 4;
+  cout << a + (b++) << endl; // 9
+  cout << (--a) + b << endl;
+
+  cout << !(true && false) << endl;
+  cout << (true && (false || true)) << endl;
+
+  int x = 7;
+  cout << (++x <= 9 && x + 2 >= 10) << endl;
+
+  int y = 3;
+  cout << (y == (y++)) << endl;
+
+  float z = 8;
+  z += 2;
+  cout << z << endl;
+  z /= 2;
+  cout << z << endl;
 }
